@@ -1,10 +1,7 @@
 export default async function Page({ params }) {
-  const response = await fetch(
-    `http:localhost:3000/api/employees/${params.id}`,
-    {
-      method: "GET",
-    }
-  );
+  const response = await fetch(`https://dummyjson.com/users/${params.id}`, {
+    method: "GET",
+  });
 
   const employee = await response.json();
 
