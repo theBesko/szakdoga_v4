@@ -7,7 +7,7 @@ import rootRouter from "./routes/index.js";
 const PORT = 3000;
 
 const run = async () => {
-  const app = next({ dev: true, dir: "." });
+  const app = next({ dev: false, dir: "." });
   const handle = app.getRequestHandler();
   const server = express();
 
